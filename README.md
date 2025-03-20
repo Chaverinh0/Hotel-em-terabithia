@@ -1,31 +1,92 @@
-# Hotel-em-terabithia
-Hora de codar 7
-Atividade - Um Hotel Terabithia
-Essa atividade tem como objetivo criar um hotel fictício, a linguagem utilizada neste projeto foi o Kotlin, quando o usuário acessar o console do IDE ele pode escolher o que irá fazer dentro do Hotel.
+Hora de Codar: Atividade 7 - Um Hotel Terabithia
+Nesta atividade, o objetivo é desenvolver um sistema para um hotel fictício chamado Hotel Terabithia, utilizando a linguagem de programação Kotlin. O programa é voltado para funcionários do hotel, permitindo que eles realizem diversas operações administrativas diretamente pelo console do IDE. O usuário pode escolher entre várias funcionalidades, como reservar quartos, cadastrar clientes, gerenciar eventos, abastecer o carro do hotel e organizar a manutenção dos ar-condicionados.
 
-Como por exemplo:
-Reserva de Quartos;
-Cadastro de Clientes;
-Pesquisar e Cadastrar Hópedes;
-Cadastrar Evento;
-Abastecer o Carro;
-Manutenção do Ar Condicionado.
-Funcionalidade de cada função
-1. Reserva de Quartos: Nesta etapa o usuário poderá reservar um quarto, ele irá colocar um valor da diária e a quantidade de dias hospedado, se o quarto estiver livre o programa vai continar, se não, ele volta para o inicio para encontrar um quarto livre, o sistema vai fazer a soma para ele e irá perguntar se quer efetuar a reserva ou não. Se ele aceitar a reserva, todos os dados da reserva vão ser guardados.
+Abaixo, descrevo as principais funcionalidades do sistema:
 
-2. Cadastro De Clientes: Aqui o usuário vai ter a opção de se cadastrar no sistema do Hotel, ele vai informar o nome e a sua idade para efetuar o cadastro, aqui também vê se o hóspede paga inteira, meia ou gratuidade.
+Funcionalidades do Sistema
+Reserva de Quartos:
 
-3. Pesquisar e Cadastar Hópedes: O hóspede pode fazer uma pesquisa no sistema do hotel, se o nome dele estiver dentro do sistema, ele pode continuar pesquisando, se não estiver dentro da lista, vai ter a opção de poder cadastrá-lo, armazenando os valores no sistema do Hotel.
+O usuário pode reservar um quarto para um hóspede.
 
-4. Cadastar Evento: Aqui nesta etapa, para cadastar o evento o usuário terá que informar o nome da empresa, quantidade de convidados, o horário de início, a duração e o dia que vai ser realizado. Tem dois auditórios que podem ser usados, se a quantidade de convidados for até 220 pessoas o programa informa que o auditório Laranja será usado, se for maior que 220 pessoas terá que ser usado o auditório Colorado, o máximo de convidados é de 350 pessoas. Com todos esses dados, o programa já faz o cálculo do buffet e dos garçons que será necessários para comportar a quantidade de convidados.
+O sistema solicita o valor da diária e a quantidade de dias de hospedagem.
 
-5. Abastecer o Carro: O hotel disponibiliza um carro para levar os hópedes para um passeio, nesta parte do programa, o usuário vai fazer uma pesquisa de valores nos postos de gasolina, tem dois postos de gasolina o Wayne Oil e o Stark Petrol, o programa vai perguntar o preço da gasolina e do álcool dos dois postos, o programa vai fazer um cálculo e vê qual posto está mais barato e se o álcool estiver 30% mais barato que a gasolina o programa irá informar qual compensa mais para abastecer o carro.
+Se o quarto escolhido estiver disponível, o programa calcula o valor total da estadia e pergunta se o usuário deseja confirmar a reserva.
 
-6. Manutenção do Ar Condicionado: O hotel precisa de empresas tercerizadas para realizar a manutenção do ar condicionado, o programa pergunta ao usuário o nome da empresa, o valor do aparelho, quantidade de aparelhos, porcentagem de desconto e a quantidade mínima de aparelhos para receber o desconto, o programa vai fazer a soma e mostrar o valor para o usuário, se quiser continuar pesquisando, o programa vai armazenando os valores das empresa e ao final do programa vai informar qual empresa compensa mais em custo benefício.
+Caso o quarto já esteja ocupado, o sistema sugere outro quarto disponível.
 
-Tecnologias utilizadas:
-Programação Estruturada;
-If-Else;
-When;
-While;
-Listas.
+Após a confirmação, os dados da reserva são armazenados.
+
+Cadastro de Clientes:
+
+O usuário pode cadastrar hóspedes no sistema do hotel.
+
+Durante o cadastro, o hóspede informa seu nome e idade.
+
+O sistema verifica se o hóspede tem direito a gratuidade (menores de 6 anos), meia-entrada (maiores de 60 anos) ou deve pagar o valor integral.
+
+Os dados dos hóspedes são armazenados para futuras consultas.
+
+Pesquisar e Cadastrar Hóspedes:
+
+O sistema permite pesquisar se um hóspede já está cadastrado.
+
+Se o hóspede não estiver na lista, o usuário pode cadastrá-lo diretamente.
+
+Os dados dos hóspedes são armazenados para consultas futuras.
+
+Cadastrar Evento:
+
+O usuário pode cadastrar eventos no hotel, como conferências ou festas.
+
+O sistema solicita informações como o nome da empresa, o número de convidados, o horário de início, a duração e o dia do evento.
+
+O hotel possui dois auditórios:
+
+Auditório Laranja: Capacidade para até 220 pessoas.
+
+Auditório Colorado: Capacidade para até 350 pessoas.
+
+O sistema escolhe automaticamente o auditório adequado com base no número de convidados.
+
+Além disso, o programa calcula o número de garçons necessários e o custo do buffet para o evento.
+
+Abastecer o Carro:
+
+O hotel disponibiliza um carro para passeios com os hóspedes.
+
+O sistema compara os preços do álcool e da gasolina em dois postos de combustível: Wayne Oil e Stark Petrol.
+
+O programa verifica qual combustível é mais vantajoso (álcool ou gasolina) e qual posto oferece o melhor custo-benefício.
+
+Se o álcool estiver 30% mais barato que a gasolina, o sistema recomenda o uso de álcool.
+
+Manutenção do Ar Condicionado:
+
+O hotel contrata empresas terceirizadas para realizar a manutenção dos ar-condicionados.
+
+O sistema permite ao usuário cadastrar várias empresas, informando o valor do serviço por aparelho, a quantidade de aparelhos, o percentual de desconto e a quantidade mínima de aparelhos para obter o desconto.
+
+O programa calcula o custo total do serviço para cada empresa e, ao final, exibe qual empresa oferece o melhor custo-benefício.
+
+Tecnologias Utilizadas
+O sistema foi desenvolvido utilizando os seguintes conceitos e estruturas da programação em Kotlin:
+
+Programação Estruturada: O código é organizado em funções que realizam tarefas específicas.
+
+Condicionais (if-else e when): Utilizados para tomar decisões com base nas entradas do usuário.
+
+Loops (while): Permitem repetir ações até que uma condição seja satisfeita.
+
+Listas: Armazenam dados como quartos disponíveis, hóspedes cadastrados e orçamentos de empresas.
+
+Como Funciona o Sistema?
+Ao iniciar o programa, o usuário é recebido com uma mensagem de boas-vindas e solicitado a inserir seu nome e senha.
+
+Após a autenticação, o usuário acessa um menu principal com todas as funcionalidades disponíveis.
+
+Cada funcionalidade é acessada por meio de uma escolha no menu, e o sistema guia o usuário passo a passo para realizar as operações desejadas.
+
+Ao final de cada operação, o usuário é redirecionado de volta ao menu principal, onde pode escolher outra funcionalidade ou sair do sistema.
+
+Objetivo do Projeto
+O objetivo principal desta atividade é criar um sistema modular e funcional para gerenciar as operações de um hotel, utilizando conceitos básicos e intermediários de programação em Kotlin. O projeto combina lógica de programação, estruturas de dados e interação com o usuário para oferecer uma experiência completa e intuitiva.
